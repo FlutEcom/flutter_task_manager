@@ -33,11 +33,11 @@ Mocktail & bloc_test - do testów jednostkowych
 Jak Uruchomić Projekt
 Sklonuj repozytorium:
 
-git clone [https://github.com/TWOJA_NAZWA/flutter_task_manager.git](https://github.com/TWOJA_NAZWA/flutter_task_manager.git)
+git clone [https://github.com/TWOJA_NAZWA/nazwa-repozytorium.git](https://github.com/TWOJA_NAZWA/nazwa-repozytorium.git)
 
 Przejdź do folderu projektu:
 
-cd flutter_task_manager
+cd nazwa-repozytorium
 
 Pobierz zależności:
 
