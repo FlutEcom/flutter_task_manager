@@ -1,0 +1,48 @@
+name: zadanie
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'  # Poprawiona składnia SDK
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Baza danych
+  sqflite: ^2.3.3
+  path: ^1.9.0
+
+  # Zarządzanie stanem
+  flutter_bloc: ^8.1.6  # Wersja 9.x może wymagać nowszego SDK
+  equatable: ^2.0.5
+
+  # Formatowanie daty i czasu
+  intl: ^0.19.0
+
+  # Powiadomienia lokalne
+  flutter_local_notifications: ^17.2.3
+  flutter_timezone: ^3.0.0  # Zaktualizowana wersja!
+  timezone: ^0.9.4  # Dopasowana do flutter_timezone
+
+  # Ikony i UI
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+
+  # Opcjonalne: Pogoda
+  geolocator: ^13.0.1
+  http: ^1.2.2
+  permission_handler: ^11.3.1
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0  # Wersja 5.x może wymagać nowszego SDK
+  bloc_test: ^9.1.7
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
