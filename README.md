@@ -21,24 +21,25 @@ Aplikacja mobilna stworzona we Flutterze. Celem aplikacji jest umożliwienie uż
 - **geolocator & http** – do pobierania lokalizacji i danych pogodowych  
 - **Mocktail & bloc_test** – do testów jednostkowych
 
-## Jak Uruchomić Projekt
+Jak Uruchomić Projekt
+Sklonuj repozytorium:
 
-1.  **Sklonuj repozytorium:**
-    ```bash
-    git clone [https://github.com/TWOJA_NAZWA/nazwa-repozytorium.git](https://github.com/TWOJA_NAZWA/nazwa-repozytorium.git)
-    ```
-2.  **Przejdź do folderu projektu:**
-    ```bash
-    cd nazwa-repozytorium
-    ```
-3.  **Pobierz zależności:**
-    ```bash
-    flutter pub get
-    ```
-4.  **Uzyskaj klucz API do pogody:**
-    - Zarejestruj się na [WeatherAPI.com](https://www.weatherapi.com/), aby otrzymać darmowy klucz.
-    - Wklej swój klucz w pliku `lib/presentation/widgets/weather_widget.dart` w miejscu `const apiKey = 'YOUR_API_KEY';`.
-5.  **Uruchom aplikację:**
-    ```bash
-    flutter run
-    ```
+git clone [https://github.com/TWOJA_NAZWA/flutter_task_manager.git](https://github.com/TWOJA_NAZWA/flutter_task_manager.git)
+
+Przejdź do folderu projektu:
+
+cd flutter_task_manager
+
+Pobierz zależności:
+
+flutter pub get
+
+Uzyskaj klucz API do pogody:
+
+Zarejestruj się na WeatherAPI.com, aby otrzymać darmowy klucz.
+
+Wklej swój klucz w pliku lib/presentation/widgets/weather_widget.dart w miejscu const apiKey = 'YOUR_API_KEY';.
+
+Uruchom aplikację:
+
+flutter run
