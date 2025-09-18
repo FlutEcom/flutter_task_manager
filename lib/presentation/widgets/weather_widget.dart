@@ -33,8 +33,11 @@ class _WeatherWidgetState extends State<WeatherWidget> {
         throw Exception('Brak uprawnień do lokalizacji.');
       }
 
-      Position position = await Geolocator.getCurrentPosition(
-          desiredAccuracy: LocationAccuracy.low);
+      const LocationSettings locationSettings = LocationSettings(
+        accuracy: LocationAccuracy.low,
+      );
+      Position position =
+          await Geolocator.getCurrentPosition(locationSettings: locationSettings);
 
       // Klucz API z WeatherAPI.com (należy go podmienić)
       const apiKey = 'dc0456da006f4e1a80d141315251709'; 

@@ -7,13 +7,9 @@ import 'package:zadanie/presentation/screens/home_screen.dart';
 import 'package:zadanie/services/notification_service.dart';
 
 Future<void> main() async {
-  // Upewniamy się, że wszystkie wtyczki są zainicjowane przed startem aplikacji.
   WidgetsFlutterBinding.ensureInitialized();
-
-  // Prosimy o uprawnienia do powiadomień przy starcie.
   await NotificationService().requestPermissions();
   await NotificationService().init();
-
   runApp(const MyApp());
 }
 
@@ -22,12 +18,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Dostarczamy BLoC do całego drzewa widżetów za pomocą BlocProvider.
     return BlocProvider(
       create: (context) => TasksBloc(
         databaseHelper: DatabaseHelper.instance,
         notificationService: NotificationService(),
-      )..add(LoadTasks()), // Wysyłamy początkowe zdarzenie, aby załadować zadania.
+      )..add(LoadTasks()),
       child: MaterialApp(
         title: 'Menadżer Zadań',
         theme: ThemeData(

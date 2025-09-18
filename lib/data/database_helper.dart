@@ -2,7 +2,6 @@ import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 import 'package:zadanie/data/task_model.dart';
 
-/// Helper class for managing the SQLite database.
 class DatabaseHelper {
   static final DatabaseHelper instance = DatabaseHelper._init();
   static Database? _database;

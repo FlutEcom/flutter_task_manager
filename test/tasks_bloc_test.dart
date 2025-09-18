@@ -6,8 +6,6 @@ import 'package:zadanie/data/database_helper.dart';
 import 'package:zadanie/data/task_model.dart';
 import 'package:zadanie/services/notification_service.dart';
 
-// Krok 1: Tworzymy "dublerów" (zaślepki) dla naszych zależności.
-// Dzięki temu możemy testować BLoC w izolacji.
 class MockDatabaseHelper extends Mock implements DatabaseHelper {}
 class MockNotificationService extends Mock implements NotificationService {}
 
@@ -45,7 +43,6 @@ void main() {
 
     blocTest<TasksBloc, TasksState>(
       'emituje stan z nowym zadaniem po dodaniu zdarzenia AddTask',
-      // KROK 1: Przygotowanie (Arrange)
       setUp: () {
         when(() => mockDatabaseHelper.createTask(any())).thenAnswer(
           (_) async => testTask,

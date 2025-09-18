@@ -1,6 +1,5 @@
 import 'package:equatable/equatable.dart';
 
-/// Model representing a task.
 class Task extends Equatable {
   final int? id;
   final String title;
@@ -16,7 +15,6 @@ class Task extends Equatable {
     this.isDone = false,
   });
 
-  /// Creates a copy of the object with new values.
   Task copyWith({
     int? id,
     String? title,
@@ -33,7 +31,6 @@ class Task extends Equatable {
     );
   }
 
-  /// Converts the object to a map for database storage.
   Map<String, dynamic> toMap() {
     return {
       'id': id,
@@ -44,7 +41,6 @@ class Task extends Equatable {
     };
   }
 
-  /// Creates an object from a map retrieved from the database.
   factory Task.fromMap(Map<String, dynamic> map) {
     return Task(
       id: map['id'] as int?,
